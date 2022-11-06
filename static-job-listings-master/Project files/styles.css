@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 10px;
+  font-family: League Spartan;
+}
+body {
+  font-size: 1.5rem;
+}
+main {
+  height: 100vh;
+  background-color: hsl(180, 52%, 96%);
+}
+.jobs__inner-container {
+  position: relative;
+  width: 100%;
+  height: 17.4rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom:6.4rem;
+}
+.jobs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2.4rem;
+  background-color: hsl(180, 52%, 96%);
+  padding-bottom: 6.4rem;
+  
+}
+.desktop-bg-img {
+  width: 100%;
+  background-color: hsl(180, 29%, 50%);
+  height: 17.4rem;
+}
+.mobile-bg-img{
+  width: 100%;
+  background-color: hsl(180, 29%, 50%);
+  display: none;
+}
+.jobs__clear-btn{
+  color:hsl(180, 14%, 20%);
+  transition: 0.3s all;
+  cursor: pointer;
+}
+.jobs__clear-btn:hover{
+  color:hsl(180, 29%, 50%);
+}
+.jobs__display-chosen-filters {
+  width: 65%;
+  position: absolute;
+  bottom: 0;
+  transform: translateY(50%);
+  border-radius: 9px;
+  box-shadow: 0px 16px 10px 0px hsl(180deg 14% 20% / 10%);
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.jobs__displayed-filters-container {
+  display: flex;
+  gap: 1.6rem;
+  list-style: none;
+  
+}
+.jobs__displayed-filter {
+  background-color: hsl(180, 52%, 96%);
+  color:hsl(180, 29%, 50%);
+  font-size: 1.8rem;
+  padding-left: 1.6rem;
+  border-radius: 9px 0 0 9px;
+}
+.jobs__displayed-filter button {
+  background-color:hsl(180, 29%, 50%);
+  padding: 1rem;
+  border-style: none;
+  margin-left: 1.6rem;
+  border-radius: 0 9px 9px 0;
+  transition: all 0.3s;
+}
+.jobs__displayed-filter button:hover{
+   background-color:hsl(180, 14%, 20%);
+}
+.jobs__displayed-filter-clear-btn {
+  border-style:none;
+  color:hsl(180, 14%, 20%);
+}
+.jobs__displayed-filter-clear-btn:hover{
+  box-shadow: inset 0 1px 0 black;
+}
+.jobs__infos-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.8rem;
+  width: 65%;
+  border-radius: 9px;
+  background-color: #fff;
+  box-shadow: 0px 16px 10px 0px hsla(180, 14%, 20%, 0.1);
+}
+.jobs__infos {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+.jobs__img {
+  width: 8.6rem;
+}
+
+.jobs__infos-company {
+  color: hsl(180, 29%, 50%);
+  font-size: 2rem;
+  font-weight: 700;
+}
+.jobs__infos-new,
+.jobs__infos-featured {
+  color: hsl(180, 31%, 95%);
+  letter-spacing: 0.1rem;
+  background-color: hsl(180, 29%, 50%);
+  padding: 0.4rem 1.2rem;
+  border-radius: 2rem;
+}
+
+.jobs__infos-featured {
+  background-color: hsl(180, 14%, 20%);
+}
+
+.jobs__infos-details-row {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+.job__infos-subdetails {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+hr{
+display: none;
+}
+.jobs__postion {
+  margin-bottom: 1.2rem;
+  color: hsl(180, 14%, 20%);
+  font-size: 2rem;
+  font-weight: 700;
+  transition:0.3s all;
+}
+.jobs__postion:hover{
+  color:hsl(180, 29%, 50%);
+  cursor: pointer;
+}
+.job__infos-subdetail {
+  color: hsl(180, 8%, 52%);
+}
+span {
+  width: 3px;
+  height: 3px;
+  background-color: hsl(180, 29%, 50%);
+  border-radius: 50%;
+}
+
+.jobs__skills {
+  display: flex;
+  gap: 2rem;
+}
+.jobs__skill {
+  color: hsl(180, 29%, 50%);
+  font-weight: 500;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  background-color: hsl(180, 31%, 95%);
+  transition: all 0.3s;
+}
+
+.jobs__skill:hover{
+  cursor: pointer;
+  color: rgb(238, 246, 246);
+  background-color: rgb(91, 164, 164);
+}
+
+/* JS */
+.hide-displayed-filterSettings-container{
+  padding: 0;
+  height: 0;
+}
+.show-displayed-filterSettings-container{
+  padding: 1.8rem 4.8rem;
+  height: auto;
+  display: flex;
+
+}

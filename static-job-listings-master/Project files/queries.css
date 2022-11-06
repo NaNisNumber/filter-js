@@ -1,0 +1,101 @@
+/* MAX WIDTH 1400PX */
+
+@media (max-width: 1400px) {
+  .jobs__infos-container {
+    width: 75%;
+  }
+  .jobs__display-chosen-filters {
+    width: 75%;
+  }
+}
+
+/* MAX WIDTH 1200PX */
+
+@media (max-width: 1200px) {
+  .jobs__infos-container {
+    width: 90%;
+  }
+  .jobs__display-chosen-filters {
+    width: 90%;
+  }
+}
+
+/* MAX WIDTH 1000PX */
+
+@media (max-width: 1000px) {
+  .jobs__display-chosen-filters {
+    width: 85%;
+  }
+  .jobs__displayed-filters-container {
+    gap: 2.4rem;
+    flex-wrap: wrap;
+  }
+  .jobs {
+    gap: 8.6rem;
+  }
+  .jobs__infos-container {
+    width: 80%;
+  }
+  .jobs__img {
+    width: 8.6rem;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 0;
+  }
+  .jobs__infos-details-row {
+    gap: 3.6rem;
+    margin-bottom: 2.4rem;
+  }
+  .jobs__infos {
+    display: block;
+    margin-top: 3.6rem;
+  }
+  .jobs__infos-container {
+    display: block;
+    position: relative;
+  }
+  hr {
+    display: block;
+  }
+  .jobs__infos-subdetails-container {
+    margin-bottom: 2.4rem;
+  }
+  .job__infos-subdetails {
+    margin-bottom: 2.4rem;
+  }
+  .jobs__postion {
+    margin-bottom: 2.4rem;
+  }
+  .jobs__skills {
+    flex-wrap: wrap;
+  }
+}
+
+/* MAX WIDTH 500PX */
+
+@media (max-width: 500px) {
+  .jobs__displayed-filter {
+    font-size: 1.5rem;
+  }
+  .jobs__infos-container {
+    width: 85%;
+  }
+  .jobs__img {
+    width: 6.4rem;
+  }
+
+  .desktop-bg-img {
+    display: none;
+  }
+  .mobile-bg-img {
+    display: block;
+  }
+}
+
+/* MAX WIDTH 450PX */
+
+@media (max-width: 500px) {
+  .jobs__infos-details-row {
+    gap: 1.6rem;
+  }
+}
